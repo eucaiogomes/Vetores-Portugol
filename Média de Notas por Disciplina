@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real media[3], soma, nota1, nota2
+
+		para(inteiro i = 0;i<3;i++){
+			escreva("Diciplina ",(i+1),"\n")
+			escreva("Informa a 1° nota: ")
+			leia(nota1)
+			escreva("Informa a 2° nota: ")
+			leia(nota2)
+			soma = nota1+nota2
+			media[i] = soma/2
+			limpa()
+		}
+		para(inteiro i = 0; i<3;i++){
+		escreva("Media da diciplina ",(i+1),": ",media[i],"\n")
+		}
+	}
+}

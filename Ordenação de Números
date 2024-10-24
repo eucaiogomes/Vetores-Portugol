@@ -1,0 +1,37 @@
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro vetor[3], valor, troca
+        
+        
+        para(inteiro i = 0; i < 3; i++)
+        {
+            escreva("Digite o ", (i+1), "° número: ")
+            leia(valor)
+            vetor[i] = valor
+        }
+
+        para(inteiro i = 0; i < 3; i++)
+        {
+            para(inteiro j = 0; j < 2; j++)
+            {
+                se (vetor[j] > vetor[j + 1])
+                {
+                    
+                    troca = vetor[j]
+                    vetor[j] = vetor[j + 1]
+                    vetor[j + 1] = troca
+                }
+            }
+        }
+
+        
+        escreva("\nValores ordenados: ")
+        para(inteiro i = 0; i < 3; i++)
+        {
+            escreva(vetor[i], " ")
+        }
+    }
+}

@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numeros[10], valor, negativo = 0, positivo=0
+		
+		para(inteiro i = 0;i<10;i++)
+		{
+			escreva("Entre com o ",(i+1),"° valor: \n")
+			leia(valor)
+			numeros[i] = valor
+			se(valor<0){
+				negativo++
+			}
+			senao{
+				positivo++
+			}
+		}
+		escreva("Quantidade de positivos: ",positivo,"\nQuantidade de Negativos: ", negativo)
+	}
+}

@@ -1,0 +1,28 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro vetor[5], busca = 0, qtdEncontrados = 0, numero
+		
+		para(inteiro i = 0;i<5;i++)
+		{
+			escreva("Entre com o ",(i+1),"° valor: \n")
+			leia(numero)
+			numero = vetor[i]
+		}
+		escreva("Digite um numero a pesquisar: \n")
+		leia(busca)
+
+		para(inteiro i = 0;i<5;i++)
+		{
+			se(busca==vetor[i]){
+				escreva("Numero encontrado, Indice: ",i,"\n")
+				qtdEncontrados++	
+			}
+		}
+		se(qtdEncontrados==0){
+		escreva("Numero nao encontrado")
+		}
+	}
+}
